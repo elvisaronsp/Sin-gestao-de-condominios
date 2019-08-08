@@ -117,7 +117,7 @@ function getMessageFromError(error, alternativeMsg) {
 }
 
 function getImageUrl(url = '') {
-  const newUrl = url.replace('http://', '');
+  const newUrl = url.replace('http://', '').replace('https://', '');
   return 'http://' + newUrl;
 }
 
