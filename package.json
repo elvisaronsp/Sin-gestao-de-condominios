@@ -1,0 +1,38 @@
+{
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "eject": "expo eject",
+    "test": "node ./node_modules/jest/bin/jest.js --watchAll"
+  },
+  "jest": {
+    "preset": "jest-expo"
+  },
+  "dependencies": {
+    "@expo/samples": "2.1.1",
+    "axios": "^0.18.0",
+    "create-react-native-app": "^2.0.2",
+    "expo": "^32.0.0",
+    "expokit": "32.0.7",
+    "native-base": "^2.11.0",
+    "react": "16.5.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
+    "react-native-calendars": "^1.22.0",
+    "react-native-fast-image": "^5.2.0",
+    "react-native-modal-datetime-picker": "^6.0.0",
+    "react-native-simple-modal": "^9.0.1",
+    "react-native-status-bar-height": "^2.2.0",
+    "react-navigation": "^3.0.9",
+    "react-navigation-redux-helpers": "^3.0.0",
+    "react-navigation-transitions": "^1.0.8",
+    "react-redux": "^6.0.0",
+    "redux": "^4.0.1"
+  },
+  "devDependencies": {
+    "babel-preset-expo": "^5.0.0",
+    "jest-expo": "^32.0.0"
+  },
+  "private": true
+}
