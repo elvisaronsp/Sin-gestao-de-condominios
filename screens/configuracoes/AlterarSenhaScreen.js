@@ -81,7 +81,7 @@ class AlterarSenhaScreen extends React.Component {
       errors: {
         ...this.props.alterarSenha.errors,
         [fieldName]: fieldValidation.error,
-        ...confirmarNovaSenhaValidation ? { confirmarNovaSenha: confirmarNovaSenhaValidation.error } : {}
+        ...(confirmarNovaSenhaValidation ? { confirmarNovaSenha: confirmarNovaSenhaValidation.error } : {})
       },
       form: { ...this.props.alterarSenha.form, [fieldName]: value }
     });

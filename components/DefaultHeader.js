@@ -32,7 +32,7 @@ function BackToHomeInHeader({ navigateProp, goTo, allowNavigate }) {
       <SButton
         transparent
         rounded
-        style={{ ...Layout.headerButtonLeft, ...allowNavigate ? {} : { display: 'none' } }}
+        style={{ ...Layout.headerButtonLeft, ...(allowNavigate ? {} : { display: 'none' }) }}
         onPress={() => navigateProp(goTo || NavigationKeys.HOME)}
       >
         <SIcon style={{ color: Colors.whiteText }} name="arrow-back" />

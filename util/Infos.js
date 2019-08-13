@@ -1,4 +1,4 @@
-import { Constants as AppConstants } from 'expo';
+import AppConstants from 'expo-constants';
 import { Platform } from "expo-core";
 
 const isIOS = function () {

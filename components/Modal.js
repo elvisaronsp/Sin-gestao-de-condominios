@@ -102,10 +102,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   modalCloseButton: {
-    ...Infos.isIOS() ? {
+    ...(Infos.isIOS() ? {
       width: 40,
       height: 40
-    } : {},
+    } : {}),
     marginTop: -70,
     backgroundColor: Colors.whiteText
   },

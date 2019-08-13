@@ -7,7 +7,7 @@ const height = Dimensions.get('window').height;
 const bottomTabNavigatorHeight = 60;
 const hardRounded = { borderRadius: 50 };
 const littleShadow = {
-  ...Infos.isIOS() ? {
+  ...(Infos.isIOS() ? {
     shadowColor: "#000",
     shadowOffset: {
       width: 0,
@@ -15,10 +15,10 @@ const littleShadow = {
     },
     shadowOpacity: 0.20,
     shadowRadius: 1.41
-  } : { elevation: 2 },
+  } : { elevation: 2 }),
 };
 const midShadow = {
-  ...Infos.isIOS() ? {
+  ...(Infos.isIOS() ? {
     shadowColor: "#000",
     shadowOffset: {
       width: 0,
@@ -26,7 +26,7 @@ const midShadow = {
     },
     shadowOpacity: 0.27,
     shadowRadius: 4.65,
-  } : { elevation: 5 },
+  } : { elevation: 5 }),
 };
 const getHightlightStyle = function (color, width = 4) {
   return { backgroundColor: color, width: width, maxWidth: 4, height: '100 %' };
@@ -105,7 +105,7 @@ export default {
     height: '100%',
     flexDirection: 'column',
     justifyContent: 'flex-start',
-    ...Infos.isIOS() ? { paddingLeft: 10, paddingRight: 10 } : { paddingTop: 5 }
+    ...(Infos.isIOS() ? { paddingLeft: 10, paddingRight: 10 } : { paddingTop: 5 })
   },
   headerButtonRight: { width: 50, height: 50, paddingRight: 5 },
   headerButtonLeft: { width: 50, height: 50 }

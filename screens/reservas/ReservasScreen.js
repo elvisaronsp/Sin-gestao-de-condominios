@@ -71,7 +71,7 @@ class ReservasScreen extends React.PureComponent {
         block
         style={{
           minWidth: '40%',
-          ...Layout.isSmallDevice ? { width: '49%' } : {},
+          ...(Layout.isSmallDevice ? { width: '49%' } : {}),
           ...Layout.midShadow,
           backgroundColor: this.isTypeActive(type) ? Colors.systemBaseColor : Colors.white
         }}

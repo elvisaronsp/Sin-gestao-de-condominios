@@ -6,5 +6,5 @@ export default function SList(props) {
 }
 
 export function SListItem(props) {
-  return <ListItem {...props} style={{ borderBottomWidth: 0, ...props.style || {} }} />;
+  return <ListItem {...props} style={{ borderBottomWidth: 0, ...(props.style || {}) }} />;
 }

@@ -34,7 +34,7 @@ class Locais extends React.PureComponent {
                         Token: this.props.home.loginInfo.token
                       }
                     }}
-                      style={{ ...Layout.slightlyRounded, ...Layout.isSmallDevice ? { width: 55, height: 35 } : { width: 110, height: 70 } }}
+                      style={{ ...Layout.slightlyRounded, ...(Layout.isSmallDevice ? { width: 55, height: 35 } : { width: 110, height: 70 }) }}
                     />
                   </SItem>
                   <SItem

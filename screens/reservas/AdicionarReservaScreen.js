@@ -345,7 +345,7 @@ class AdicionarReservaScreen extends React.PureComponent {
   selectQtdHoras(hora) {
     this.props.setAdicionarReservaData({
       novaReserva: { ...this.props.adicionarReserva.novaReserva, locqtdadehoras: hora },
-      ...Infos.isIOS() ? { qtdHorasPickerOpen: false } : {}
+      ...(Infos.isIOS() ? { qtdHorasPickerOpen: false } : {})
     });
   }
 
