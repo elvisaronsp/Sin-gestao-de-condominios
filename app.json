@@ -8,7 +8,7 @@
       "ios",
       "android"
     ],
-    "version": "1.0.6",
+    "version": "1.0.7",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "splash": {
@@ -34,7 +34,7 @@
     },
     "android": {
       "package": "com.icondev.sin",
-      "versionCode": 7
+      "versionCode": 8
     }
   }
 }
